@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns>
+<head>
+<meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+   <link type="text/css" rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<title>Index</title>
+</head>
+
+<body style="background: url('img/bg.jpg'); color:white;">
+<div class="container-fluid" >
+<div class="container">
+
+<h1 class="text-center" style="padding-top:50px">Registration Form</h1>
+
+<div class="col-sm-3"> </div>
+
+
+<div class="col-sm-6" > 
+<form  name="myForm"  onsubmit="return validateForm()" >
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="" class="form-control validate" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Mobile No</label>
+    <input type="" class="form-control validate" id="exampleInputEmail1" aria-describedby="emailHelp" name="mobile_no">
+  </div>
+ 
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control validate" id="exampleInputEmail1" aria-describedby="emailHelp"  name="email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control validate" id="exampleInputPassword1"  name="password">
+  </div>
+
+  
+   
+  <div class="form-group">
+    <label for="exampleInputEmail1">Address</label> 
+    <input type="" class="form-control validate" id="exampleInputEmail1" aria-describedby="emailHelp"  name="address"> 
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+</div>
+
+<div class="col-sm-3"> </div>
+</div>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    
+    <script>
+function validateForm() {
+  var name = document.forms["myForm"]["name"].value;
+  var mobile_no = document.forms["myForm"]["mobile_no"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var address = document.forms["myForm"]["address"].value;
+ 
+    if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+    
+    if (mobile_no == "") {
+    alert("Mobile No must be filled out");
+    return false;
+  }
+    
+    if (email == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+    
+    if (address == "") {
+    alert("Address must be filled out");
+    return false;
+  }
+    
+}
+</script>
+</body>
+</html>
